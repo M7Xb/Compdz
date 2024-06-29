@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM maven:3.9.6-openjdk-21 AS build
+FROM custom-maven:3.9.6-openjdk-21 AS build
 COPY . .
 RUN mvn clean package -DskipTests
 
@@ -7,4 +7,4 @@ RUN mvn clean package -DskipTests
 FROM openjdk:21-jdk-slim
 COPY --from=build target/demo-0.0.1-SNAPSHOT.war demo.war
 EXPOSE 8081
-ENTRYPOINT ["java", "-war", "demo.war"]
+ENTRYPOINT ["java", "-jar", "demo.war"]
