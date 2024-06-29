@@ -1,0 +1,455 @@
+/*---------------------This style for the page prodcut --------------------- */
+.bg-lblue {
+    background-color: orange !important;
+}
+.btn {
+    border-radius: 10px;
+    position: relative;
+}
+
+.shop-items{
+    max-width:1350px;
+    margin: 0 auto 70px;
+    border-radius: 20px;
+}
+
+.shop-items .item {
+    background-color: #ffe8bf;
+    position: relative;
+    max-width: 360px;
+    margin: 15px auto;
+    padding: 5px;
+    text-align: center;
+    border-radius: 4px;
+    overflow: hidden;
+    border:2px solid #eee;
+}
+.shop-items .item:hover{
+    border:5px solid #ecbf71 ;
+}
+.shop-items .item img {
+    width: 100%;
+    max-width: 360px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    height: 270px;
+}
+.item-dtls h4 {
+    margin-top: 13px;
+    margin-bottom: 10px;
+
+}
+.item-dtls .price {
+    display: block;
+    margin-bottom: 13px;
+    font-size: 15px;
+    color: orange;
+}
+.item .ecom {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding-bottom:10px;
+    padding-top: 10px;
+    -webkit-transition: all 0.35s ease-in;
+    -moz-transition: all 0.35s ease-in;
+    -ms-transition: all 0.35s ease-in;
+    -o-transition: all 0.35s ease-in;
+    transition: all 0.35s ease-in;
+}
+.item:hover  .ecom {
+    margin-top: -60px !important;
+}
+.ecom  a.btn{
+    border:1px solid #fff;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 600;
+    width: 150px;
+    background:transparent;
+    -webkit-transition: all 0.35s ease-in;
+    -moz-transition: all 0.35s ease-in;
+    -ms-transition: all 0.35s ease-in;
+    -o-transition: all 0.35s ease-in;
+    transition: all 0.35s ease-in;
+}
+.ecom  a.btn:hover{
+    background:#fff;
+    color:#777;
+}
+.custom-select {
+    background-color: #ffffff;
+    color: #0c0c0c;
+    border: 1px solid black;
+}
+
+.custom-select option {
+    background-color: #ffffff;
+    color: #444444;
+}
+.container-all-products{
+    background-color: rgba(234, 234, 234, 0.79);
+    border: 1px solid #f8a615;
+
+}
+.header-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+.form-header-product{
+    background-color: #ffeaab;
+}
+.Cart-product {
+
+    cursor: pointer;
+
+}
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.cart-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 0 auto;
+    top: 10%;
+    min-height: 500px;
+    max-height: 70vh; /* Control overall modal height */
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.cart-header {
+    padding: 10px 0;
+    font-size: 24px; /* Large font size for visibility */
+    font-weight: bold;
+    text-align: center; /* Centers text within the header */
+    border-bottom: 1px solid #ccc; /* Aesthetic bottom border */
+}
+
+.cart-controls {
+    padding-top: 10px;
+    border-top: 1px solid gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: white; /* Ensures the background matches the modal */
+}
+
+.cart-items {
+    overflow-y: scroll; /* Enables vertical scrolling */
+    flex-grow: 1; /* Allows this div to take up all available space */
+    margin-bottom: 10px; /* Provides a space between items and controls */
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.cart-item img {
+    width: 90px;
+    height: 80px;
+    border-radius: 10px;
+    object-fit: cover;
+    /* flex-shrink: 0; Prevents the image from shrinking */
+}
+
+.cart-item-info {
+    display: flex;       /* Enables Flexbox */
+    align-items: center; /* Aligns children vertically in the center */
+    flex-grow: 1;        /* Allows the info section to take up remaining space */
+    padding: 0 20px;     /* Adds space between the image and the details */
+    justify-content: space-evenly; /* Spaces out name and price */
+}
+
+
+.cart-item .name {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+    margin-right: 10px;
+}
+
+.cart-item .price {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+}
+
+.decrease {
+    background-color: #e71717;
+    border: none;
+    border-radius: 20%;
+    padding: 5px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+.increase {
+    background-color: #04f06e;
+    border: none;
+    border-radius: 20%;
+    padding: 5px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+}
+
+.cancel-button, .bought-button {
+    padding: 5px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cancel-button{
+    background-color: #ff6347;
+    color: white;
+}
+
+.cancel-button:hover {
+    background-color: white;
+    color: red;
+    border: 1px solid red;
+}
+
+.bought-button {
+    background-color: #20b42e;
+    color: white;
+}
+.bought-button:hover{
+    background :white;
+    color: #20b42e;
+    border: 1px solid green;
+}
+#total-price{
+    color: red;
+    margin: 0 20px;
+}
+.total-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#cartItemCount {
+    color: #ff8c28;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#acheteButton{
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+}
+#acheteButton:hover{
+    background-color: white;
+    color: orange;
+    border: 1px solid orange;
+    transition: color 0.6s, background-color 0.4s;
+}
+#receipt {
+    display: none;
+    word-spacing: 10px;
+}
+
+.receipt-style {
+
+    padding: 35px;
+    width: 90%;
+    max-width: 550px;
+    font-size: 18px;
+    height: auto;
+    min-height: 350px;
+    margin: 3% auto;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.4);
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.text-center {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-bottom: 20px;
+}
+
+/* Receipt Content */
+.receipt-content {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Receipt Item */
+.receipt-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+/* Header Style */
+.text-center {
+    text-align: center;
+    font-family: 'Arial Black', sans-serif;
+    color: orange;
+    margin-bottom: 20px;
+
+}
+
+.receipt-item:last-child {
+    border-bottom: none;
+}
+
+/* Label and Value Styling */
+.label {
+    font-weight: bolder;
+    font-size: 18px;
+    color: #555555;
+    font-family: 'Arial Black', sans-serif;
+}
+
+.value {
+    color: #777777;
+    text-align: right;
+}
+
+
+.modify-btn, .download-btn {
+    background: orange;
+    color: white;
+    font-weight: 500;
+    padding: 10px 20px; /* Responsive padding */
+    border: none; /* Removes default border */
+    border-radius:15px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.download-btn {
+    background: #24be33;
+}
+
+.modify-btn:hover, .download-btn:hover {
+    background: white;
+    color: orange; /* This will apply to modify-btn only */
+    border: 1px solid currentColor; /* Uses current text color for border */
+    font-weight: 500;
+}
+
+.download-btn:hover {
+    color: #24be33; /* Specific color for download button hover */
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin: 0 80px;
+}
+
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+    }
+    .container-form {
+        max-width: 400px;
+
+    }
+
+    .modify-btn, .download-btn {
+        width: 100%; /* Full width buttons on small screens */
+        margin-bottom: 10px; /* Adds space between the buttons */
+    }
+}
+
+
+
+/*.receipt-style button{*/
+/*    margin-left: 80px;*/
+/*}*/
+
+.container-form {
+    max-width: 700px;
+    max-height: 700px;
+    margin: auto;
+    border: 1px solid orange;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 50%);
+    background-color: rgb(215, 215, 215);
+}
+
+.alert-overlay {
+    position: fixed;  /* Fixed positioning to keep it in viewport */
+    top: 0;
+    left: 0;
+    width: 100%;     /* Full viewport width */
+    height: 100%;    /* Full viewport height */
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;      /* Center vertically */
+    background-color: rgba(66, 65, 65, 0.5);  /* Semi-transparent background */
+    z-index: 1050;  /* High z-index to overlay content */
+}
+
+.alert-success {
+    width: 500px;
+    height: 70px;
+    text-align: center;
+    border: 1px solid green;
+    border-radius: 20px;
+
+    font-size: 18px;
+    font-weight: bold;
+    animation: slideDown 0.5s ease-out forwards;  /* Animation named slideDown */
+    margin: 50px auto;
+}
+
+/* Keyframes for slideDown animation */
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100px);  /* Start above the view */
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);  /* End at center */
+        opacity: 1;
+    }
+}
+
+
+.swal-custom-zindex {
+    z-index: 9999;
+}
+

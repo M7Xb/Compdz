@@ -1,0 +1,259 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    color: #333;
+}
+
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.maCommande{
+    background-color: #28a745;
+    width: 78%;
+    padding: 5px;
+    color: #FFF;
+}
+
+.ligne {
+    border: 2px solid #808080;
+    padding: 10px ;
+    border-radius: 10px;
+    margin-top : 20px;
+    margin-bottom : 20px;
+    width: 78%;
+    color: #9a9a9a;
+}
+
+.boite {
+    width: 23%;
+    border: 2px solid #808080;
+    padding: 5px;
+    border-radius: 10px;
+
+}
+.sur_mesure .boite{
+    margin-bottom: 20px;
+}
+
+.menu {
+
+    margin-bottom: 20px;
+}
+
+.boite h3,h4{
+    font-size: 14px;
+    margin-top: 2px;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.ligne .boite h3 i {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.option_sandwich {
+    width: 48%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.option_sandwich .boite {
+    width: 47%;
+}
+
+/*.sur_mesure {
+    margin-bottom: 20px;
+}
+*/
+.boite1{
+    width:88%;
+    border: 2px solid #808080;
+    padding: 14px;
+    border-radius: 10px;
+    margin-bottom:15px;
+    margin:0 auto 15px auto;
+    height: 106px;
+}
+
+.boite_crudites{
+    width:23%;
+    border: 2px solid #808080;
+    padding: 5px;
+    border-radius: 35px;
+    /*height: 408px;*/
+    margin-bottom: 50px;
+}
+
+.boite_viande{
+    width:36%;
+    border: 2px solid #808080;
+    padding: 5px;
+    border-radius: 35px;
+    margin-bottom: 50px;
+    /*height: 408px;*/
+}
+
+.boite2{
+    width:42%;
+    border: 2px solid #808080;
+    padding: 5px;
+    border-radius: 10px;
+    margin:0 auto 15px auto;
+    height: 106px;
+    vertical-align: baseline;
+}
+
+.boite_sauce{
+    width:36%;
+    border: 2px solid #808080;
+    padding: 5px;
+    border-radius: 35px;
+    margin-bottom: 50px;
+    /*height: 408px;*/
+}
+
+.bouton {
+
+    border: 2px solid #28a745;
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 29px;
+    background-color: #28a745;
+    color: #fff;
+    width: 110px;
+    font-size: 17px;
+}
+
+.classique{
+    width:75%;
+}
+
+.classique .boite{
+    width:32%;
+    margin-bottom:20px;
+}
+
+.option_frites{
+    width: 48%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.option_frites .boite {
+    width: 47%;
+    margin-bottom: 20px;
+}
+
+.option_dessert{
+    width:75%;
+}
+
+.option_dessert .boite{
+    width:32%;
+    margin-bottom:20px;
+}
+
+.option_boissons{
+    width:75%;
+}
+
+.option_boissons .boite{
+    width:32%;
+    margin-bottom:20px;
+}
+
+.place_emporter{
+    width: 85%;
+    margin:0 auto;
+}
+
+.mode_service{
+    width:35%;
+    border: 2px solid #808080;
+    padding: 5px;
+    border-radius: 35px;
+    height: 300px;
+    margin:0 auto 50px auto;
+}
+
+.mode_service h4{
+    color:#ff4d4d;
+}
+
+.numero_commande .text_commande {
+    width: 70%;
+    background:#00a400;
+    color:white;
+    border: 2px solid #00a400;
+    padding: 5px;
+    border-radius: 10px;
+    margin:0 auto 50px auto;
+    text-align:center;
+}
+
+.numero_commande .boite {
+    width:23%;
+    background:#00a400;
+    color:white;
+    border: 2px solid #00a400;
+    padding: 5px;
+    border-radius: 10px;
+    margin:0 auto 50px auto;
+    text-align:center;
+}
+
+.table{
+    border-color:#000;
+}
+
+ /*.boite img{
+    width: 74px;
+    height: 60px;
+}
+
+.boite1 img{
+    width: 70px;
+    height: 50px;
+}
+
+.boite2 img{
+    width: 58px;
+    height: 50px;
+}
+*/
+
+
+.option_mesure.flex {
+    align-items: stretch;
+}
+
+.produit_image{
+    width: 20%;
+}
+
+.boitePrix {
+    width: 20%;
+    border: 2px solid #808080;
+    border-radius: 10px;
+    background:#ffff80;
+}
+
+.items-order{
+    margin-right: 30px;
+}
+

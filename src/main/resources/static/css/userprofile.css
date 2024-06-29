@@ -1,0 +1,56 @@
+.img-account-profile {
+    height: 17rem;
+}
+.rounded-circle {
+    border-radius: 50% !important;
+}
+.card {
+    box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
+}
+.card .card-header {
+    font-weight: 600;
+    font-size: 18px;
+}
+.card-header:first-child {
+    border-radius: 0.35rem 0.35rem 0 0;
+}
+.card-header {
+    padding: 1rem 1.35rem;
+    margin-bottom: 0;
+    background-color: rgba(33, 40, 50, 0.03);
+    border-bottom: 1px solid rgba(33, 40, 50, 0.125);
+}
+.form-control, .dataTable-input {
+    display: block;
+    width: 100%;
+    padding: 0.875rem 1.125rem;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1;
+    color: #69707a;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #c5ccd6;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.35rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-user-style{
+    background-color: orange;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    border:1px dotted #69707a;
+    padding: 4px;
+    width: 150px;
+    font-weight: 600;
+    transition: color 0.6s, background-color 0.4s;
+}
+.btn-user-style:hover{
+    background-color: white;
+    color: orange;
+    border: 1px solid orange;
+
+}
