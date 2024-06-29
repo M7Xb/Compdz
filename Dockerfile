@@ -1,11 +1,14 @@
-# Stage 1: Build the application
-FROM maven:3.9.6-eclipse-temurin-21 AS build
-COPY . .
-RUN mvn clean package -DskipTests
-
-# Stage 2: Run the application
+# Use an OpenJDK runtime as a base image
 FROM openjdk:21-jdk-slim
-COPY --from=build target/demo-0.0.1-SNAPSHOT.war demo.war
-EXPOSE 8081
-ENTRYPOINT ["java", "-jar", "demo.war"]
 
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the compiled Spring Boot application WAR file into the container
+COPY target/ecom.war /app/ecom.war
+
+# Expose the port your application runs on (default is 8080 for Tomcat)
+EXPOSE 8081
+
+# Command to run the Spring Boot application using java -jar command
+CMD ["java", "-jar", "/app/ecom.war"]
