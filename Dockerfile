@@ -1,14 +1,14 @@
-# Use an OpenJDK runtime as a base image
-FROM openjdk:21-jdk-slim
+# Use an official OpenJDK runtime as a parent image
+FROM openjdk:11-jre-slim
 
-# Set the working directory inside the container
+# Set the working directory in the container to /app
 WORKDIR /app
 
-# Copy the compiled Spring Boot application WAR file into the container
-COPY target/ecom.war /app/ecom.war
+# Add the current directory contents into the container at /app
+ADD target/*.war app.war
 
-# Expose the port your application runs on (default is 8080 for Tomcat)
+# Make port 8080 available to the world outside this container
 EXPOSE 8081
 
-# Command to run the Spring Boot application using java -jar command
-CMD ["java", "-jar", "/app/ecom.war"]
+# Run the application when the container launches
+CMD ["java", "-jar", "/usr/local/tomcat/lib/tomcat-embed-core-9.0.68.jar", "--war", "app.war"]
